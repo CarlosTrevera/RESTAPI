@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  db:
+    container_name: SQLServerDatabase
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Pass123?
+      - TZ=America/Los_Angeles
+    ports:
+      - 14331:1430
