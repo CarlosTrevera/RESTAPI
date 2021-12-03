@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jhGRSn8U+IVnaGTGS5RuS6ttfWseyrBfGtKuzcyRa+M=",
+  "Source": "UTO.restApi",
+  "BasePath": "_content/UTO.restApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
