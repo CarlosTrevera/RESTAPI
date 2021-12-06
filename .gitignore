@@ -339,3 +339,26 @@ ASALocalRun/
 # Local History for Visual Studio
 .localhistory/
 
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+netflixclone/node_modules
+netflixclone/.pnp
+netflixclone/.pnp.js
+
+# testing
+netflixclone/coverage
+
+# production
+netflixclone/build
+
+# misc
+netflixclone/.DS_Store
+netflixclone/.env.local
+netflixclone/.env.development.local
+netflixclone/.env.test.local
+netflixclone/.env.production.local
+
+netflixclone/npm-debug.log*
+netflixclone/yarn-debug.log*
+netflixclone/yarn-error.log*
