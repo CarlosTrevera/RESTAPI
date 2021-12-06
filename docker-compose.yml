@@ -9,4 +9,4 @@ services:
       - SA_PASSWORD=Pass123?
       - TZ=America/Los_Angeles
     ports:
-      - 14331:1430
+      - 14331:1433
