@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTO.restApi", "UTO.restApi.csproj", "{8DDAFADC-D343-43B1-94E3-0AF0CF12B322}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UTO.restApi", "UTO.restApi.csproj", "{8DDAFADC-D343-43B1-94E3-0AF0CF12B322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTO.UnitTesting.Sqlite", "..\UTO.UnitTesting.Sqlite\UTO.UnitTesting.Sqlite.csproj", "{8EA8D4E8-C7E8-4CD9-8FC8-A97A0822EE94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8DDAFADC-D343-43B1-94E3-0AF0CF12B322}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DDAFADC-D343-43B1-94E3-0AF0CF12B322}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DDAFADC-D343-43B1-94E3-0AF0CF12B322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA8D4E8-C7E8-4CD9-8FC8-A97A0822EE94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA8D4E8-C7E8-4CD9-8FC8-A97A0822EE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA8D4E8-C7E8-4CD9-8FC8-A97A0822EE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA8D4E8-C7E8-4CD9-8FC8-A97A0822EE94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
