@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "V3Uho5JOyvZ1FE8B4xlD3XH6GbShAHCCl9SUUnjyl/5O9pf5tgZk+eb2d58cS9OpRMGUU2aginDFKzpen28Q7Q==",
+  "dgSpecHash": "Lcwji95ta708mPNopGo3qp39QB22kOIs4PEjFvFiB3OC+GMya0z/L2UCNQeSRC7QExgFxVx/KGsqVUXmmtuj7A==",
   "success": true,
   "projectFilePath": "C:\\Users\\carlos_trevera\\Documents\\API\\UTO.restApi\\UTO.restApi.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,7 @@
     "C:\\Users\\carlos_trevera\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\carlos_trevera\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\carlos_trevera\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\carlos_trevera\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\carlos_trevera\\.nuget\\packages\\microsoft.visualstudio.debugger.contracts\\17.2.0\\microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512",
     "C:\\Users\\carlos_trevera\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\6.0.0\\microsoft.visualstudio.web.codegeneration.6.0.0.nupkg.sha512",
     "C:\\Users\\carlos_trevera\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\6.0.0\\microsoft.visualstudio.web.codegeneration.core.6.0.0.nupkg.sha512",

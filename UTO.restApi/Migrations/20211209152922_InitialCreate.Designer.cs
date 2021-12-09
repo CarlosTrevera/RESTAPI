@@ -12,7 +12,7 @@ using UTO.restApi.Models;
 namespace UTO.restApi.Migrations
 {
     [DbContext(typeof(APIDbContext))]
-    [Migration("20211209144116_InitialCreate")]
+    [Migration("20211209152922_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

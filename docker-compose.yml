@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   db:
-    container_name: SQLServerDatabase
+    container_name: db
     image: mcr.microsoft.com/mssql/server:2019-latest
     environment:
       - ACCEPT_EULA=Y
