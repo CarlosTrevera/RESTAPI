@@ -23,5 +23,6 @@ namespace UTO.restApi.Models
         public bool Status { get; set; }
         [ForeignKey("MemberId")]
         public Guid MemberId { get; set; }
+        public Member Member { get; set; }
     }
 }

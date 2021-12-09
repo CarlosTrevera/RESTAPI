@@ -13,6 +13,8 @@ namespace UTO.restApi.Models
         public DateTime VigencyMember { get; set; }
         [ForeignKey("MemberTypeId")]
         public Guid MemberTypeId { get; set; }
+        public MemberType MemberType { get; set; }
+        public User User { get; set; }
 
     }
 }

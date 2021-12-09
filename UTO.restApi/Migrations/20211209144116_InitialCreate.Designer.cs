@@ -12,8 +12,8 @@ using UTO.restApi.Models;
 namespace UTO.restApi.Migrations
 {
     [DbContext(typeof(APIDbContext))]
-    [Migration("20211206222116_CreacionInicial")]
-    partial class CreacionInicial
+    [Migration("20211209144116_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -52,6 +52,12 @@ namespace UTO.restApi.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ContentId");
+
+                    b.HasIndex("ClassificationId");
+
+                    b.HasIndex("ContentGenreId");
+
+                    b.HasIndex("ContentTypeId");
 
                     b.ToTable("Content");
                 });
@@ -115,6 +121,8 @@ namespace UTO.restApi.Migrations
 
                     b.HasKey("MemberId");
 
+                    b.HasIndex("MemberTypeId");
+
                     b.ToTable("Member");
                 });
 
@@ -148,6 +156,10 @@ namespace UTO.restApi.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("MemberTypeContentId");
+
+                    b.HasIndex("ContentId");
+
+                    b.HasIndex("MemberTypeId");
 
                     b.ToTable("MemberTypeContent");
                 });
@@ -186,7 +198,83 @@ namespace UTO.restApi.Migrations
 
                     b.HasKey("UserId");
 
+                    b.HasIndex("MemberId")
+                        .IsUnique();
+
                     b.ToTable("User");
+                });
+
+            modelBuilder.Entity("UTO.restApi.Models.Content", b =>
+                {
+                    b.HasOne("UTO.restApi.Models.ContentClassification", "Classification")
+                        .WithMany()
+                        .HasForeignKey("ClassificationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("UTO.restApi.Models.ContentGenre", "ContentGenre")
+                        .WithMany()
+                        .HasForeignKey("ContentGenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("UTO.restApi.Models.ContentType", "ContentType")
+                        .WithMany()
+                        .HasForeignKey("ContentTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Classification");
+
+                    b.Navigation("ContentGenre");
+
+                    b.Navigation("ContentType");
+                });
+
+            modelBuilder.Entity("UTO.restApi.Models.Member", b =>
+                {
+                    b.HasOne("UTO.restApi.Models.MemberType", "MemberType")
+                        .WithMany()
+                        .HasForeignKey("MemberTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MemberType");
+                });
+
+            modelBuilder.Entity("UTO.restApi.Models.MemberTypeContent", b =>
+                {
+                    b.HasOne("UTO.restApi.Models.Content", "Content")
+                        .WithMany()
+                        .HasForeignKey("ContentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("UTO.restApi.Models.MemberType", "MemberType")
+                        .WithMany()
+                        .HasForeignKey("MemberTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Content");
+
+                    b.Navigation("MemberType");
+                });
+
+            modelBuilder.Entity("UTO.restApi.Models.User", b =>
+                {
+                    b.HasOne("UTO.restApi.Models.Member", "Member")
+                        .WithOne("User")
+                        .HasForeignKey("UTO.restApi.Models.User", "MemberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Member");
+                });
+
+            modelBuilder.Entity("UTO.restApi.Models.Member", b =>
+                {
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

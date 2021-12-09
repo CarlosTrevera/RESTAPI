@@ -17,10 +17,14 @@ namespace UTO.restApi.Models
         public string Url { get; set; }
         [ForeignKey("ContentClassificationId")]
         public Guid ClassificationId { get; set; }
+        public ContentClassification Classification { get; set; }
         [ForeignKey("ContentTypeId")]
         public Guid ContentTypeId { get; set; }
+        public ContentType ContentType { get; set; }
         [ForeignKey("ContentGenreId")]
         public Guid ContentGenreId { get; set; }
+        public ContentGenre ContentGenre { get; set; }
+
 
     }
 }

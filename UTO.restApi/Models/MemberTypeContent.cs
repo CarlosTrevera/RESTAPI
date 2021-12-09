@@ -13,7 +13,9 @@ namespace UTO.restApi.Models
         public int MemberTypeContentId { get; set; }
         [ForeignKey("MemberTypeId")]
         public Guid MemberTypeId { get; set; }
+        public MemberType MemberType { get; set; }
         [ForeignKey("ContentId")]
         public Guid ContentId { get; set; }
+        public Content Content { get; set; }
     }
 }
